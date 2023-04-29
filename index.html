@@ -11,22 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/791cf0e6a5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Weather App</title>
-    <style>
-      .container {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
   </head>
   <body class="container">
     <div class="row justify-content-center">
@@ -36,7 +26,7 @@
             <div>
               <input
                 type="search"
-                placeholder="Enter a city"
+                placeholder="Search for a new city . . ."
                 autocomplete="off"
                 autofocus="on"
                 id="searchInput"
@@ -68,8 +58,8 @@
                   <a href="#" id="fahrenheit-link">°F</a>
                 </span>
                   <ul id="humidityAndWind">
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li><i class="fa-solid fa-droplet"></i> Humidity: <span id="humidity"></span>%</li>
+                <li><i class="fa-solid fa-wind"></i> Wind: <span id="wind"></span> km/h</li>
                   </ul>
                 </div>
               </div>
@@ -83,5 +73,7 @@
      <footer>
         <span>This project was coded by <a href="https://www.linkedin.com/in/phoebe-bruce-b36a15209/"> Phoebe Bruce</a></ahref> and is<a href="https://github.com/pbruce628/SheCodes-Weather-App"> open-sourced on github</a></ahref></span>
       </footer>
+      <script src="script.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

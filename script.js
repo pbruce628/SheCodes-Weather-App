@@ -141,6 +141,11 @@ document.addEventListener("DOMContentLoaded", function () {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
 
+  function displayFahrenheitColor() {
+    document.getElementById("fahrenheit-link").style.color = "black";
+    document.getElementById("celsius-link").style.color = "grey";
+  }
+
   function displayCelsiusTemperature(event) {
     event.preventDefault();
     celsiusLink.classList.add("active");
@@ -150,13 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
   }
 
+  function displayCelsiusColor() {
+    document.getElementById("fahrenheit-link").style.color = "grey";
+    document.getElementById("celsius-link").style.color = "black";
+  }
+
   let celsiusTemperature = null;
 
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+  fahrenheitLink.addEventListener("click", displayFahrenheitColor);
 
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
+  celsiusLink.addEventListener("click", displayCelsiusColor);
 
   //Find current location by geolocation
   function findLocation() {

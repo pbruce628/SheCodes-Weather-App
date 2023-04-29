@@ -4,6 +4,10 @@ body {
 }
 
 .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   position: absolute;
   top: 0;
@@ -75,7 +79,7 @@ body {
 #currentLocationInformation {
   font-size: 15px;
   position: relative;
-  top: -45px;
+  top: -40px;
   right: 80px;
   list-style: none;
 }
@@ -83,7 +87,7 @@ body {
 #currentTemperature {
   font-size: 100px;
   position: relative;
-  top: 25px;
+  top: 20px;
   right: 210px;
 }
 
@@ -96,7 +100,7 @@ body {
 }
 
 #humidityAndWind {
-  margin-top: -100px;
+  margin-top: -95px;
   margin-left: -120px;
   font-size: 14px;
 }
@@ -112,6 +116,8 @@ body {
 
 .updated {
   font-size: 15px;
+  color: black;
+  font-style: italic;
 }
 
 #currentWeatherDescription {
@@ -135,7 +141,14 @@ li {
 #celsius-link,
 #fahrenheit-link {
   text-decoration: none;
+}
+
+#celsius-link {
   color: black;
+}
+
+#fahrenheit-link {
+  color: grey;
 }
 
 #celsius-link:hover,
